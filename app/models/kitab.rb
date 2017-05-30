@@ -1,0 +1,2 @@
+class Kitab < ApplicationRecord
+end

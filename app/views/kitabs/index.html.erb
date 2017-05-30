@@ -1,0 +1,10 @@
+<h1>Welcome to my new selection of books</h1>
+<div>
+  <h1><%= @kitabs.each do |kitab| %></h1>
+        <h1><%= kitab.name %></h1>
+
+      <i><%= kitab.description %></i>
+<p><%= kitab.cost %></p>
+        </div>
+<hr/>
+<% end %>

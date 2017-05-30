@@ -1,0 +1,12 @@
+<h1>Enter your book details</h1>
+<div class="kitab_box">
+  <%= simple_form_for @kitab do |f| %>
+      <%= f.input :name %>
+      <br />
+      <%= f.input :description %>
+      <br />
+      <%= f.input :cost %>
+      <br />
+      <%= f.submit 'Create' %>
+  <% end %>
+</div>
