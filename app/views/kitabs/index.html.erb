@@ -1,10 +1,13 @@
-<h1>Welcome to my new selection of books</h1>
-<div>
-  <h1><%= @kitabs.each do |kitab| %></h1>
-        <h1><%= kitab.name %></h1>
 
-      <i><%= kitab.description %></i>
-<p><%= kitab.cost %></p>
-        </div>
-<hr/>
-<% end %>
+
+    <h1>Welcome to my new selection of books</h1>
+<div> <%= link_to 'Enter a new book', new_kitab_path %></div>
+<% @kitabs.reverse.each do |book | %>
+    <div>
+      <h1>Book name: <%= book.name %></h1>
+      <h1> book#: <%= book.id %> </h1>
+      <h1> Description: <%= book.description %></h1>
+      <h1> Price: <%= book.cost %></h1>
+    </div>
+    <hr />
+    <% end %>

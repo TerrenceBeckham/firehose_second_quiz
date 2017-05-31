@@ -1,3 +1,5 @@
+<h1>Welcome to my new selection of books</h1>
+
 <h1>Enter your book details</h1>
 <div class="kitab_box">
   <%= simple_form_for @kitab do |f| %>
@@ -10,3 +12,5 @@
       <%= f.submit 'Create' %>
   <% end %>
 </div>
+
+<div> <%= link_to 'Homepage', root_path %> </div>
